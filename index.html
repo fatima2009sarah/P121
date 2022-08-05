@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>Google Lens VS Mobilenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <p>CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET
+        </p>
+        <span class="google_lens">
+            GOOGLE LENS <img
+                src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU">
+        </span>
+        <p>VS</p>
+        <p id="mobilenet" class="btn btn-primary">Mobilenet</p>
+        <br>
+        <div class="test_image_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b class="white1">
+                    Test Image - Bottle</b>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-jPW6MeRjXyf_p5TStVh-GAxHEzdUn1kwig&usqp=CAU">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output On <b>GOOGLE LENS</b> - Rainbow bottle 
+                <span></span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+                Output On <b>Mobilenet Model</b> - Pen
+                <span></span>
+            </h5>
+            <div class="mini_result col-xs-12">
+                <h4>Result - GOOGLE LENS is more accurate</h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="test_image_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b class="white1">
+                    Test Image - Apple</b>
+                <img
+                    src="https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output On <b>GOOGLE LENS</b> - Apple
+                <span></span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+                Output On <b>Mobilenet Model</b> - Apple 
+                <span></span>
+            </h5>
+            <div class="mini_result col-xs-12">
+                <h4>Result - Both are same</h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="test_image_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b class="white1">
+                    Test Image - Scrunchie</b>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwtQf2fMtnZ-8StUn_GO3yizmv9RUglnA3w&usqp=CAU">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output On <b>GOOGLE LENS</b> - Handband
+                <span></span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+                Output On <b>Mobilenet Model</b> - Cloth
+                <span></span>
+            </h5>
+            <div class="mini_result col-xs-12">
+                <h4>Result - GOOGLE LENS is a lil bit more accurate</h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="test_image_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b class="white1">
+                    Test Image - Shoe</b>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0n3uJdx_nsVZfwEER3aSEVxroSz9Oy6BHw&usqp=CAU">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output On <b>GOOGLE LENS</b> - Running Shoe
+                <span></span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+                Output On <b>Mobilenet Model</b> - Canvas Shoe
+                <span></span>
+            </h5>
+            <div class="mini_result col-xs-12">
+                <h4>Result - GOOGLE LENS is more accurate</h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="test_image_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b class="white1">
+                    Test Image - Diary</b>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNvXi3XNfiIurTpyrZ3GnxFDFQktPuGWA8g&usqp=CAU">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+                Output On <b>GOOGLE LENS</b> - Diary
+                <span></span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+                Output On <b>Mobilenet Model</b> - Notebook
+                <span></span>
+            </h5>
+            <div class="mini_result col-xs-12">
+                <h4>Result - GOOGLE LENS is more accurate</h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+
+
+
+    </center>
+    <div class="copy_right_footer">
+        Made By Sarah Fatima
+    </div>
+</body>
+
+</html>
